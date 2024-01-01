@@ -1,0 +1,42 @@
+@media (min-width: 641px) and (max-width: 1200px) {
+
+    .header_content {
+        width: 90%;
+    }
+
+    .logo_img {
+        width: 85%;
+    }
+
+    .title {
+        font-size: 65px;
+    }
+
+    .nav_menu {
+      display: none;
+    }
+  
+    .blog {
+      flex-direction: column;
+      margin-left: 0;
+    }
+  }
+  
+  @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+    
+  }
+  
+  @media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
+  
+    .gallery_boxes {
+      flex-wrap: wrap;
+      gap: 5px;
+      align-content: space-between;
+      justify-content: space-between;
+    }
+  
+    .box {
+      width: 49.8%;
+      background-position: center;
+    }
+  }

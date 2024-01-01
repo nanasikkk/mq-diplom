@@ -5,9 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MQ diplom</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" media="(min-width: 641px) and (max-width: 1200px)" href="css/tablet.css">
+    <link rel="stylesheet" media="(min-width: 640px)" href="css/mobile.css"> -->
 </head>
 <body>
-    <header class="header">
+  <dialog class="popup">
+    <div class="popup-content">
+      <h2 class="popup-title section-title">Ваш фидбек</h2>
+      <button class="popup_close" type="button"></button>
+
+      <div class="popup_form-group">
+        <form>
+          <label class="select-group">
+            <span class="select-label">Как часто вы заходите на сайт?</span>
+            <select class="select">
+              <option value="everyDay" selected>Почти каждый день</option>
+              <option value="day">Раз в несколько дней</option>
+              <option value="week">Раз в несколько недель</option>
+              <option value="year">Несколько раз в год</option>
+            </select>
+          </label>
+
+          <p>Вы подписаны на e-mail рассылку?</p>
+          <div>
+            <input type="radio" id="choice1" name="choice" value="yes" checked>
+            <label for="сhoice1">Да</label>
+        
+            <input type="radio" id="choice2" name="choice" value="no">
+            <label for="cрoice2">Нет</label>
+          </div>
+
+          <label class="field-group">
+            <span class="field-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+            <textarea class="field textarea" placeholder="Может, больше рецептов?" required></textarea>
+          </label>
+        </div>
+        <div class="form-group form-btn">
+          <button class="button button-submit" type="submit">Сохранить</button>
+        </form>
+    </div>
+  </dialog>
+
+  <header class="header">
         <div class="header_content">
           <div class="wrap">
             <div class="logo">
