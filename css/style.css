@@ -29,7 +29,7 @@
     box-sizing: border-box;
     position: relative;
     width: 100%;
-    background-image: url(/image/banner-bg.jpg);
+    background-image: url(../image/banner-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-color: #000000;
@@ -168,19 +168,19 @@
   }
 
   .box-1 {
-    background-image: url(/image/trend1.jpg);
+    background-image: url(../image/trend1.jpg);
   }
 
   .box-2 {
-    background-image: url(/image/trend2.jpg);
+    background-image: url(../image/trend2.jpg);
   }
 
   .box-3 {
-    background-image: url(/image/trend3.jpg);
+    background-image: url(../image/trend3.jpg);
   }
 
   .box-4 {
-    background-image: url(/image/trend4.jpg);
+    background-image: url(../image/trend4.jpg);
   }
 
   .box-content {
