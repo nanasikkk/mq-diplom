@@ -29,7 +29,7 @@
     box-sizing: border-box;
     position: relative;
     width: 100%;
-    background-image: url("/image/banner-bg.jpg");
+    background-image: url(/image/banner-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-color: #000000;
