@@ -744,78 +744,133 @@
 /* Pop-up */
 
 .popup {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0 0 0 / 75%);
-  overflow: hidden;
+  /* visibility: hidden;
+  opacity: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
-  top: 0px;
-  z-index: 1;
+  inset: 0;
+  width: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .popup-content {
-  position: fixed;
-  left: 40%;
-  top: 25%;
-  width: 25%;
-  height: 60%;
-  background-color: #ffffff;
-  z-index: 2;
+/* 
+  visibility: hidden;
+  opacity: 0; */
+  position: relative;
+  box-sizing: border-box;
+  z-index: 10;
+  background-color: #fff;
+  padding: 24px 25px 27px 25px;
 }
 
-.popup-title {
-  padding-top: 40px;
+.close {
+  position: absolute;
+  right: -1px;
+  top: -37px;
+  cursor: pointer;
 }
 
 .popup_close {
-	position: absolute;
-  top: -30px;
-  right: 20px;
-	cursor: pointer;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background-image: url(../svg/form-x.svg);
+  background-repeat: no-repeat;
+  background-color: unset;
+  border: none;
 }
 
-.popup_close::before, .popup_close::after {
-	content: '';
-	position: absolute;
-	top: 10px;
-	display: block;
-	width: 24px;
-	height: 3px;
-  background-color: #ffffff;
+.popup-title {
+  position: relative;
+  margin-bottom: 31px;
+  text-align: center;
 }
 
-
-.popup_close::before {
-	transform: rotate(45deg);
+.select-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
 }
 
-.popup_close::after {
-	transform: rotate(-45deg);
+.select-label-text {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 7px;
 }
 
-.select {
- display: inline-block;
+.select-field {
  box-sizing: border-box;
- width: 100%;
- height: 38px;
- 
- padding-left: 10px;
- padding-right: 25px;
- 
- margin: 0;
- 
- border: 1px solid #cbd1d4;
- background-color: #f9f9f9;
- background-image: url("https://netology-code.github.io/html-2-homeworks/form-elements/city-select/img/select-arrows.svg");
+ position: relative;
+ font-size: 13px;
+ background-color: #F4F7F6;
+ color: #9B9C9C;
+ padding: 0px 20px;
+ border: none;
+ min-width: 100%;
+ height: 48px;
+ background-image: url(../svg/form-arrows.svg);
+ background-size: 11px;
  background-repeat: no-repeat;
- background-position: right 5px center;
- 
- font-size: 14px;
- font-family: Arial,sans-serif;
- color: #333333;
+ background-position: 95% center;
+ -webkit-appearance: none;
+ -moz-appearance: none;
 }
 
-.select:focus {
- outline: 2px solid #0f8fee;
- outline-offset: 4px;
+.radio-box {
+  display: flex;
+  margin: 13px 31 30px;
+  gap: 68px;
+}
+
+.radio {
+  display: none;
+}
+
+.choice-label {
+  display: block;
+  font-size: 13px;
+}
+
+.choice-label_yes, .choice-label_no {
+  position: relative;
+}
+
+.radio_yes:checked ~ .choice-label_yes::after {
+  background-image: url(../svg/form-circle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.text-box {
+  margin-bottom: 26px;
+}
+
+.field {
+  box-sizing: border-box;
+  margin-top: 13px;
+  display: block;
+  width: 100%;
+  height: 130px;
+  padding-left: 21px;
+  padding-top: 13px;
+  resize: none;
+  border: none;
+  background-color: #F4F7F6;
+}
+
+.button-submit {
+  min-width: 100%;
+  min-height: 47px;
+  padding: 0;
+  border: none;
+  background-color: #B59F5B;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  transition: 0.2s ease-in;
 }

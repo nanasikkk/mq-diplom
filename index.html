@@ -9,43 +9,7 @@
     <link rel="stylesheet" media="(min-width: 640px)" href="css/mobile.css"> -->
 </head>
 <body>
-  <div class="popup">
-    <div class="popup-content">
-      <h2 class="popup-title section-title">Ваш фидбек</h2>
-      <button class="popup_close" type="button"></button>
-
-      <div class="popup_form-group">
-        <form>
-          <label class="select-group">
-            <span class="select-label">Как часто вы заходите на сайт?</span>
-            <select class="select">
-              <option value="everyDay" selected>Почти каждый день</option>
-              <option value="day">Раз в несколько дней</option>
-              <option value="week">Раз в несколько недель</option>
-              <option value="year">Несколько раз в год</option>
-            </select>
-          </label>
-
-          <p>Вы подписаны на e-mail рассылку?</p>
-          <div>
-            <input type="radio" id="choice1" name="choice" value="yes" checked>
-            <label for="сhoice1">Да</label>
-        
-            <input type="radio" id="choice2" name="choice" value="no">
-            <label for="cрoice2">Нет</label>
-          </div>
-
-          <label class="field-group">
-            <span class="field-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-            <textarea class="field textarea" placeholder="Может, больше рецептов?" required></textarea>
-          </label>
-        </div>
-        <div class="form-group form-btn">
-          <button class="button button-submit" type="submit">Сохранить</button>
-        </form>
-    </div>
-  </div>
-
+  
   <header class="header">
         <div class="header_content">
           <div class="wrap">
@@ -396,5 +360,49 @@
         
           <a class="copyright_link" href="#">Copyright © 2009–2019 City Blog LLC.</a>
   </footer>
+
+  <div class="popup">
+    <div class="popup-content">
+      <div class="close">
+        <button class="popup_close" type="button"></button>
+        <span class="visually-hidden">Закрыть форму обратной связи</span>
+      </div>
+
+      <form class="popup_form" action="#">
+        <h3 class="popup-title section-title">Ваш фидбек</h3>
+        <div class="select-box">
+          <label class="select-label" for="select-field">
+            <span class="select-label-text">Как часто вы заходите на сайт?</span>
+            <select class="select-field" name="select-field" required>
+              <option value="everyDay" selected>Почти каждый день</option>
+              <option value="day">Раз в несколько дней</option>
+              <option value="week">Раз в несколько недель</option>
+              <option value="year">Несколько раз в год</option>
+            </select>
+          </label>
+        </div>
+
+        <span>Вы подписаны на e-mail рассылку?</span>
+
+        <div class="radio-box">
+          <input id="choice-yes" class="radio choice-yes" type="radio" name="choice" value="yes" checked>
+          <label for="choice-yes" class="choice-label choice-label_yes">Да</label>
+        
+          <input id="choice-no" class="radio choice-no" type="radio" name="choice" value="no">
+          <label for="choice-no" class="choice-label choice-label_yes">Нет</label>
+        </div>
+
+        <div class="text-box">
+          <label class="text-label" for="field">
+            <span>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+            <textarea id="field" class="field" placeholder="Может, больше рецептов?" required></textarea>
+          </label>
+        </div>
+
+        <div class="form-btn">
+          <button class="button button-submit" type="submit">Отправить</button>
+        </form>
+    </div>
+  </div>
 </body>
 </html>
