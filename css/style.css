@@ -37,10 +37,6 @@
   display: none;
 }
 
-.popup_hidden {
-  display: none;
-}
-
 .popup_close-bg {
   position: absolute;
   top: 0;
@@ -71,17 +67,6 @@
   cursor: pointer;
 }
 
-.feedback_sessions,
-.feedback_follow,
-.feedback_textarea {
-  border: none;
-}
-
-.feedback_title {
-  margin-bottom: 9px;
-  font-size: 13px;
-}
-
 .section_title {
   font-size: 14px;
   line-height: 12px;
@@ -97,6 +82,18 @@
   height: 3px;
   margin: 13px auto 0;
   background-color: rgba(181, 159, 91, 0.4);
+}
+
+
+.sessions_title {
+  margin-bottom: 9px;
+  font-size: 13px;
+}
+
+.feedback_sessions,
+.feedback_follow,
+.feedback_textarea {
+  border: none;
 }
 
 .feedback_title {
