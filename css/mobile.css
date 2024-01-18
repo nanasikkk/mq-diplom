@@ -97,15 +97,15 @@
     line-height: 1.2;
   }
 
-    /* Content -> Main -> article */
+    /* Main -> content -> article */
 
-  .content {
+  .main {
     flex-direction: column;
     gap: 46px;
     padding: 46px 15px 0;
   }
   
-  .main {
+  .content {
     width: 100%;
   }
   
@@ -138,7 +138,7 @@
     line-height: 20px;
   }
 
-  /* Main - Sidebar */
+  /* Content - Sidebar */
   
   .sidebar {
     width: 100%;

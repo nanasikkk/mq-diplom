@@ -274,7 +274,7 @@
   color: #ffffff;
 }
 
-  /* Content -> Main -> gallery */
+  /* Main -> content -> gallery */
 
 .gallery {
   padding-top: 65px;
@@ -348,7 +348,6 @@
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  text-decoration: none;
   line-height: 14px;
   color: #b59f5b;
 }
@@ -374,9 +373,9 @@
   color: #b59f5b;
 }
 
-  /* Content -> Main -> article */
+  /* Main -> content -> article */
 
-.content {
+.main {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
@@ -384,7 +383,7 @@
   padding: 62px 15px 0;
 }
 
-.main {
+.content {
   width: 778px;
 }
 
@@ -419,10 +418,8 @@
 
 .blog_title-link {
   display: block;
-
   font-size: 20px;
   text-transform: uppercase;
-  text-decoration: none;
   letter-spacing: 0.1px;
   color: #0f0d0e;
 }
@@ -456,7 +453,7 @@
   color: #0f0d0e;
 }
   
-  /* Main - Sidebar */
+  /* Content - Sidebar */
 
 .sidebar {
   width: 272px;
@@ -511,7 +508,6 @@
 }
 
 .post_title-link {
-  text-decoration: none;
   color: #000000;
 }
   
@@ -603,7 +599,6 @@
 .tags_item {
   padding: 3px 13px 4px 14px;
   border: 3px solid #eeeeee;
-
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -801,6 +796,8 @@
   background-image: url(../svg/003-tumblr.svg);
 }
 
+/* Copyright */
+
 .copyright {
   font-style: normal;
   text-align: center;
@@ -811,5 +808,3 @@
   font-weight: 700;
   color: #999999;
 }
-  
-/* Copyright */
